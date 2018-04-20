@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        'use strict';
+        function car(speed, checkUp, brand, age, price) {
+            this._speed = speed;
+            this._checkUp = checkUp;
+            this._brand = brand;
+            this._age = age;
+            this._price = price;
+        }
+
+        car.prototype.GetSpeed = function () {
+            return "Speed: " + this._speed + "km/h";
+        }
+
+        car.prototype.GetBrand = function () {
+            return "Brand: " + this._brand;
+        }
+
+        car.prototype.GetAge = function () {
+            return "Age: " + this._age + "years";
+        }
+
+        car.prototype.GetPrice = function () {
+            return "Price: " + this._price + "$";
+        }
+
+        car.prototype.GetTechSee = function () {
+            let checkUpDate = new Date(this._checkUp),
+                nowDate = new Date(),
+                dateDiff = Math.round((nowDate - checkUpDate) / (1000 * 60 * 60 * 24));
+            dateDiff > 365 ? console.log("go to checkUp!") : console.log("happy road!");
+        }
+
+        var jiguli = new car(69,"2018-01-01","jiguli",30,200);
+        console.log(jiguli.GetTechSee());
+        console.log(jiguli.GetAge());
+        console.log(jiguli.GetSpeed());
+        console.log(jiguli.GetBrand());
+        console.log(jiguli.GetPrice());
+    </script>
+</body>
+
+</html>
