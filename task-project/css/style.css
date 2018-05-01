@@ -1,0 +1,91 @@
+.project-datepicker__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-datepicker__calendar {
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 180%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAFA;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.project-datepicker__title-container {
+    margin-top: 3px;
+    width: 97%;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+}
+
+.project-datepicker__title {
+    width: 80%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project-datepicker__button {
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 15px;
+    color: #9b9b9b;
+}
+
+.project-datepicker__button:hover {
+    color: #ffd17c;
+    transition: 0.2s ease-in-out;
+}
+
+.project-datepicker__days-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 97%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.project-datepicker__days-name-day {
+    display: inline-block;
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.project-datepicker__weeks-container {
+    width: 97%;
+}
+
+.project-datepicker__weeks-week {
+    margin-bottom: 5px;
+    background-color: #FAFAFA;
+}
+
+.project-datepicker__week_day {
+    display: inline-block;
+    padding-right: 4px;
+    margin-right: 2px;
+    width: 11.5%;
+    text-align: right;
+    background-color: #f0f0f0;
+    border: 1px solid #d3d3d3;
+}
+
+.project-datepicker__week_day:hover, .project-datepicker__days-name-day:hover {
+    background-color: #ffdd9d;
+    border-color: #ffcd6f;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
