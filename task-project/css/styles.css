@@ -1,0 +1,83 @@
+.js-datepicker__wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.js-datepicker__calendar {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 180%;
+    justify-content: flex-start;    
+    align-items: center;
+    background-color: #FAFAFA;
+    
+}
+
+.js-datepicker__title-container {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.js-datepicker__title {
+    /* margin: 0 10px 0 10px; */
+    display: inline-block;
+    width: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.js-datepicker__button {
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 22px;
+    color: #0080FF;
+    
+}
+
+.js-datepicker__days-name {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border: 1px solid #eee;
+}
+
+.js-datepicker__days-name-day {
+    display: inline-block;
+    width: calc(100% / 7);
+    text-align: center;
+    border: 1px solid #eee;
+}
+.js-datepicker__weeks-week {
+    border: 1px solid #eee;
+}
+.js-datepicker__weeks-container {
+    width: 100%;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.js-datepicker__week_day {
+    display: inline-block;
+    width: calc(96% / 7);
+    border: 1px solid #eee;
+}
+
+.js-datepicker__week_day:hover, .js-datepicker__days-name-day:hover {
+    background-color: #0080FF;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.js-datepicker__weeks-today{
+    background-color: #0080FF;
+    border-radius: 6px;
+    cursor: pointer;
+}
